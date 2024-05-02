@@ -1,0 +1,44 @@
+[user]
+	name = Robbie Redfearn
+	email = rredfearn32@gmail.com
+[pager]
+	branch = false
+	diff = false
+[fetch]
+	prune = true
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[alias]
+  	s = status
+	rh = reset --hard HEAD
+  	b = checkout -b
+  	co = checkout
+	a = add
+	aa = add *
+	cm = commit -m
+  	cam = commit -am
+	cnv = "!git commit -m $1 --no-verify"
+  	cp = cherry-pick
+  	amend = commit --amend --no-edit
+	unstage = restore --staged
+  	cdiff = "!git diff $1 $1^"
+	ba = branch -a
+	bd = branch -D
+	pn = push --set-upstream origin HEAD
+	bdr = push -d origin
+	slog = log --stat
+	unaa = restore --staged .
+	reword = commit --amend
+	uncommit-last = reset --soft HEAD~
